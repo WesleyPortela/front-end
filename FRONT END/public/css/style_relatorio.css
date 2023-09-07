@@ -1,0 +1,213 @@
+*{
+    box-sizing: border-box;
+}
+html{ margin: 0;}
+body{
+    display:block;
+    font-family: sans-serif;
+    margin: 0;
+    background: #110462;
+}
+a{/*tira o sub-line do link*/ /* */
+    text-decoration:none;
+}
+#user{/* estilização da foto de usuário */
+    margin-top: 20px;
+    background-color: #afadb8;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+#logo_megalink{/* ajuste da logo na tela */
+    display: flex;
+    flex-direction: row;
+    margin-left: 50%;
+    margin-top: 15px;
+}
+.sidebar > nav{/* orientação na <NAV> do sidebar, para não dixar o conteúdo sair*/
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+.sidebar{/* formatação e orientação da sidebar*/
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 15%;
+    height: 100%;
+    background: #d9d9d9;
+}
+#container{/* estilização do container proncipal*/
+    display: block;
+    flex-direction: column;
+    padding: 2px 50px 20px 50px;
+    align-items: center;
+    background-color: #d9d9d9;
+    margin-left: 20%;
+    margin-right: 5%;
+    width: 76%;
+    height: 90%;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+#cabeçalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+#barra-pesquisa{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+#pesquisa{
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+}
+#select{
+    border: none;
+    border-radius: 10px;
+    height: 25px;
+}
+#mostragem{
+    margin-top: 15px;
+    display: block;
+    width: 100%;
+    height: 350px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.side-buttom{ /* alinhamento dos botões da barra lateral*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: none;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 15%;
+    width: 110%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 10pt;
+    transition: all 0.3s;
+}
+.side-buttom:hover{/* animação de mouse*/
+    transform: scale(1.1);
+    color: orangered;
+}
+.exit-buttom{/* estilização especial, botão de "SAIR*/
+    display: flex;
+    flex: 1 1 auto;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    border-radius: 15px;
+    height: 30px;
+    width: 60px;
+    margin-top: 200px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0%;
+    transition: 0.5s;
+}
+.exit-buttom:hover{/* animação de mouse*/
+    background: orangered;
+    border: 15px;
+    border-color: white;
+}
+
+
+
+
+
+
+@media(width < 1000px){
+
+.sidebar-header{/* estilização da foto de usuário */
+    margin-left: 30px;
+    object-fit: cover;
+    scale: 0.7;
+}
+.sidebar > nav{/* orientação na <NAV> do sidebar, para não dixar o conteúdo sair*/
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar{/* formatação e orientação da sidebar*/
+    position: fixed;
+    top: 0;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 15%;
+    background: #d9d9d9;
+}
+#logo_megalink{/* ajuste da logo na tela */
+    margin: auto;
+    justify-content: center;
+    margin-top: 25%;
+   
+}
+#container{/* estilização do container proncipal*/
+    display: block;
+    flex-direction: column;
+    padding: 2px 20px 2px 20px;
+    align-items: center;
+    background-color: #d9d9d9;
+    margin: auto;
+    width: 90%;
+    height: 90%;
+    margin-top: 25px;
+    border-radius: 20px;
+}
+#cabeçalho{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+}
+#mostragem{
+    display: block;
+    width: 100%;
+    height: 400px;
+    background-color: white;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+#pesquisa{
+    border-radius: 10px;
+    border: none;
+    height: 25px;
+}
+
+.side-buttom{ /* alinhamento dos botões da barra lateral*/
+    border: none;
+    margin-top: auto;
+    scale: 0.8;
+    transition: all 0.3s;
+}
+.exit-buttom{/* estilização especial, botão de "SAIR*/
+    display: flex;
+    margin: auto;
+    margin-right: 40px;
+
+
+    
+}
+}
