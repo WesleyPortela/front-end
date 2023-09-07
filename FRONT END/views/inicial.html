@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Início</title>
+    <script src="inicio.js" defer></script>
+    <link rel="stylesheet" href="../public/css/style_inicial.css">
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/> <!-- Link href para utilização de icones-->
+
+</head>
+<body>
+    
+    <div class="main">
+        <aside class="sidebar"> <!-- Componentes da barra lateral-->
+            <header class="sidebar-header">
+                <img id="user" src="../public/img/WhatsApp Image 2023-08-09 at 21.42.33.jpeg" width="80px" height="80px">
+                <p> USUÁRIO </p>
+            </header>
+            <nav>
+                <a  href="Inicial.html">
+                    <button class="side-buttom">
+                        <span>
+                            <i class="material-symbols-outlined"> home </i>
+                            <span><br> HOME </span>
+                        </span>
+                    </button>
+                </a>
+                <a href="relatorio.html">
+                    <button class="side-buttom">
+                        <span>
+                            <i class="material-symbols-outlined"> note </i>
+                            <span> <br> RELATÓRIO </span>
+                        </span>
+                    </button>
+                </a>
+                <a href="Login.html">
+                    <button class="exit-buttom">
+                        <span> SAIR </span>
+                    </button>
+                </a>
+            </nav>
+        </aside>
+        <div class="junto"> <!-- clase que agrupa as demais DIV's da página para facilitar na estilização e formatação-->
+            <div id="logo_megalink">
+                <img src="../public/img/Logo/logo_megalink.png" width="150" heigth="200">
+            </div>
+            <form class="container"> <!-- Conteiner que recebe os inputs, select's e imagens-->
+                <div id="entrada">
+                    <P> PROTOCOLO </P>
+                    <input type="number" pattern="[0-9]"> 
+                    <P> SERIAL </P>
+                    <input type="text" id="serial"> 
+                    <P> MODELO </P>
+                    <select id="Modelo" onchange="att(this.value)" >
+                        <option value="HUAWEI-V5">HUAWEI V5</option>
+                        <option value="HUAWEI-V2" >HUAWEI V2</option>
+                        <option value="NOKIA-W-2425-G" selected>NOKIA W-2425-G</option>
+                        <option value="NOKIA-240-W">NOKIA 240-W</option>
+                    </select>
+                </div>
+                <div id="equipamento">
+                    <img id="onu" src="../public/img/EQUIPAMENTOS/NOKIA-2425G.webp" height="auto" width="350px">
+                </div>
+                <div id="center">
+                    <br> <br> <button class="buttom-config" onclick="adiciona(protocolo, serial)"> MOVIMENTAR </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
